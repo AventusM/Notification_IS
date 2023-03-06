@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (_req, res) => {
-  res.send({ status: "error", message: "An api error message" });
+  res.send({ status: "success", message: "A happy message!" });
 });
 
 const PORT = process.env.PORT || 3001;
